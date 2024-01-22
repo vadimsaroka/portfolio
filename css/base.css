@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/* 1200px */
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* 600px */
+@media only screen and (max-width: 37.5em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-weight: 300;
+    line-height: 1.6;
+    /* background-color: whitesmoke; */
+    /* background-color: #999fa1; */
+    background-color: #062530c2;
+    display: flex;
+    flex-direction: column;
+    max-width: 384em;
+    min-width: 36rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    font-family: "PT Sans";
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+::selection {
+    background-color: #fff;
+    color: black;
+}
+
+mark {
+    background-color: #fff;
+    color: black;
+    opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
