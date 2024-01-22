@@ -50,28 +50,5 @@ window.onload = () => {
             coordXprocent = coordX / parallaxWidth * 100;
             coordYprocent = coordY / parallaxHeight * 100;
         });
-
-        // // Parallax during scrolling
-        // let thresholdSet = [];
-        // for (let i = 0; i <= 1.0; i += 0.005) {
-        //     thresholdSet.push(i);
-        // }
-
-        // const callback = (entries, observer) => {
-        //     const scrollTopProcent = window.scrollY / parallax.offsetHeight * 100;
-        //     setParallaxItemStyle(scrollTopProcent);
-        // }
-
-        // const observer = new IntersectionObserver(callback, {
-        //     threshold: thresholdSet,
-        // });
-
-        // observer.observe(document.querySelector(".content"));
-
-        // function setParallaxItemStyle(scrollTopProcent) {
-        //     content.style.cssText = `transform: translate(0%, -${scrollTopProcent}%)`;
-        //     mountains.parentElement.style.cssText = `transform: translate(0%, -${scrollTopProcent / 6}%);`;
-        //     person.parentElement.style.cssText = `transform: translate(0%, -${scrollTopProcent / 3}%);`;
-        // }
     }
 }
