@@ -4,16 +4,12 @@ window.onload = () => {
     const parallax = document.querySelector(".container");
 
     if (parallax) {
-        const image = document.querySelector(".image");
-        const greeting = document.querySelector(".greeting");
-        const fog = document.querySelector("img[alt='fog']");
+        const fog = document.querySelector("img[id='fog']");
         const about = document.querySelector(".about__wrapper");
 
         // Coefficients
-        const forImage = 16;
-        const forGreeting = 12;
-        const forFog = 50;
-        const forAbout = 34;
+        const forFog = 20;
+        const forAbout = 40;
 
         // Animation speed
         const speed = .5;
@@ -28,8 +24,6 @@ window.onload = () => {
             positionX = positionX + (distX * speed);
             positionY = positionY + (distY * speed);
 
-            image.style.cssText = `transform: translate(${positionX / forImage}%, ${positionY / forImage}%);`;
-            greeting.style.cssText = `transform: translate(${positionX / forGreeting}%, ${positionY / forGreeting}%);`;
             fog.style.cssText = `transform: translate(${positionX / forFog}%, ${positionY / forFog}%);`;
             about.style.cssText = `transform: translate(${positionX / forAbout}%, ${positionY / forAbout}%);`;
 
